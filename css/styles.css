@@ -1,0 +1,188 @@
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+
+}
+
+
+/* headings  */
+.big-heading {
+  color: #fff;
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* containers  */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/* sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+
+.white-section {
+  background-color: #ffffff;
+
+}
+
+/*** navbar ***/
+
+.navbar {
+  padding: 0 0 4.5rem
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+}
+
+.nav-item {
+  padding: 0 20px 0 20px;
+}
+
+.nav-link {
+  font-size: 1.2em;
+}
+
+
+
+/* title section */
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%; /****it changes the style only in title section, it is more specific and overrides the previous one**/
+}
+
+
+/***download buttons ***/
+.download-button {
+  margin: 5% 3% 3% 0;
+}
+
+
+/***title dog photo***/
+
+.dog-image {
+  width: 60%;
+  transform: rotate(20deg);
+  position: absolute;
+  right: 30%;
+}
+
+/***features section ***/
+#features {
+  position: relative;
+  /**this is relative, because we need a space for the section. If we put absolute here, the feature section hides the testimonials*****/
+  z-index: 1;
+}
+
+.feature {
+  color: #8f8f8f;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+
+}
+
+.feature-icon {
+  color: #ef8172;
+  padding-bottom: 4%;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+/* testimonial section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+/* press section */
+#press {
+  background-color: #ef8172;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 20px 20px 50px
+}
+
+/* pricing */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* footer */
+
+
+.social-media {
+  padding: 4% 2%;
+}
+
+.footer-text {
+  color: #8f8f8f;
+}
+
+/* media queries */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .dog-image {
+    position: static;
+    transform: rotate(0deg);
+    }
+}
